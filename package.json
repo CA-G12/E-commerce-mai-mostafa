@@ -1,0 +1,32 @@
+{
+  "name": "e-commerce-mai-mostafa",
+  "version": "1.0.0",
+  "description": "psql",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/",
+    "dev" :"nodemon server/"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CA-G12/E-commerce-mai-mostafa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CA-G12/E-commerce-mai-mostafa/issues"
+  },
+  "homepage": "https://github.com/CA-G12/E-commerce-mai-mostafa#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.19",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
