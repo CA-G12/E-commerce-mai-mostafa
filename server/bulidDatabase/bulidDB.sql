@@ -19,17 +19,17 @@ BEGIN ;
     ); 
 
    INSERT INTO categories (name)
-    VALUES ('SANDWICH') ,
-            ('HAMBURGER') ,
-            ('DESSERT') ,
-            ('SALAD') 
+    VALUES ('Decorations') ,
+            ('Sweets') ,
+            ('Gifts') ,
+            ('Drinks') 
     ;
 
     INSERT INTO products (pro_name, description, image, price, category_id)
-    VALUES ('HAMBURGER meat', 'HAMBURGER meat description', 'https://images.pexels.com/photos/1251198/pexels-photo-1251198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 24, 2) ,
-            ('FRESH SALAD', 'FRESH SALAD description', 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 10, 4) ,
-            ('cake', 'cake description', 'https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 8, 3) ,
-            ('SANDWICH falafl', 'SANDWICH falafl description', 'https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 3, 1) 
+    VALUES ('Decorations Name', 'Decorations Description', 'https://imgmedia.lbb.in/media/2021/11/619ce65f1134120ab58437d2_1637672543359.jpg', 24, 2) ,
+            ('Sweets', 'Sweets Description', 'https://www.eatthis.com/wp-content/uploads/sites/4/2020/12/christmas-cookies.jpg?quality=82&strip=1', 10, 4) ,
+            ('Gifts', 'Gifts description', 'https://cdn.decoist.com/wp-content/uploads/2017/12/Create-your-own-gift-box-this-Holiday-Season.jpg', 8, 3) ,
+            ('Drinks', 'Drinks description', 'https://insanelygoodrecipes.com/wp-content/uploads/2021/07/A-Glass-of-Cranberry-Cocktail-800x450.jpg', 3, 1) 
     ;
 
 
