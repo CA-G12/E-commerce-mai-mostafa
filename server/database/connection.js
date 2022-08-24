@@ -2,7 +2,7 @@ const { Pool } = require('pg');
 
 require('dotenv').config();
 
-const url = process.env.DB_URL;
+const url = process.env.DATABASE_URL;
 
 if (!url) throw new Error('Environment variable DB_URL must be set');
 
