@@ -1,8 +1,7 @@
 const conn = require('../connection');
 
-const getAllCategories = () => {
-
-   return conn.query('select * from categories ;').then((data)=> data.rows);
-
+const categoriesQuery = () => {
+   return conn.query('select * from categories ;').then((data) => data.rows);
 }
-module.exports = getAllCategories ;
+
+module.exports = { categoriesQuery };
