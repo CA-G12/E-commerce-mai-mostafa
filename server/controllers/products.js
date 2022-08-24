@@ -8,7 +8,8 @@ const addProducts = (req, res) => {
 
 const getAllProducts = (req, res) => {
     getAllCProducts().then((data) => {
-        console.log(data)
+        console.log(data.rows)
+            res.send(data.rows);        
     });
 };
 
