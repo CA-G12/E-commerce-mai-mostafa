@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(compression());
 
+app.use(express.static('public'));
 app.use(router)
 
 module.exports = app
