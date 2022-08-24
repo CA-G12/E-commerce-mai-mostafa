@@ -8,7 +8,7 @@ if (!url) throw new Error('Environment variable DB_URL must be set');
 
 const connection = new Pool({
     connectionString: url,
-    ssl: {rejectUnauthorized: false},
+    ssl:  {rejectUnauthorized: false},
 });
 
 module.exports = connection;
