@@ -1,42 +1,41 @@
-const selectCategory = document.getElementsByTagName('select')[0];
-const inputName = document.getElementById('name');
-const inputDescription = document.getElementById('description');
-const inputImage = document.getElementById('image');
-const inputPrice = document.getElementById('price');
-const addBtn = document.getElementsByTagName('button')[0];
+const container = document.querySelector('div.container')
 
-fetch('/getData')
+fetch("/get-products")
   .then((data) => data.json())
   .then((data) => {
-    // console.log(data);
+    console.log(data);
 
     data.forEach((element, i) => {
-      const option = document.createElement('option');
-      option.value = data[i]['id'];
-      option.textContent = data[i]['name'];
-      selectCategory.appendChild(option);
+      const card = document.createElement("div");
+      card.setAttribute("class", "card");
+      container.appendChild(card)
+      const cardHeader = document.createElement("div");
+      cardHeader.setAttribute("class", "card-header");
+      card.appendChild(cardHeader);
+
+      const cardImg = document.createElement("img");
+      cardImg.src = data[i]["image"];
+      cardHeader.appendChild(cardImg);
+
+      const cardBody = document.createElement("div");
+      cardBody.setAttribute("class", "card-body");
+      card.appendChild(cardBody);
+
+      const cardcategory = document.createElement("span");
+      cardcategory.setAttribute("class", "tag tag-pink");
+      cardcategory.textContent = data[i]["name"];
+      cardBody.appendChild(cardcategory);
+
+      const cardName = document.createElement("h4");
+      cardName.textContent = data[i]["pro_name"];
+      cardBody.appendChild(cardName);
+
+      const cardDescription = document.createElement("p");
+      cardDescription.textContent = data[i]["description"];
+      cardBody.appendChild(cardDescription);
+
+      const cardPrice = document.createElement("h2");
+      cardPrice.textContent =`${data[i]["price"]}$`;
+      cardBody.appendChild(cardPrice);
     });
   });
-
-const handelAddProuducts = () => {
-  // errorMessage.textContent = '';
-  const header = {
-    method: 'POST',
-    body: JSON.stringify({
-      name: inputName.value,
-      description: inputDescription.value,
-      category: selectCategory.value,
-      image: inputImage.value,
-      price: inputPrice.value,
-    }),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  };
-  fetch('/add-product', header)
-    .then((data) => data.json())
-    .then((data) => {
-    }).catch(console.log);
-};
-
-addBtn.addEventListener('click', handelAddProuducts);
