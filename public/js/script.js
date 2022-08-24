@@ -1,4 +1,4 @@
-const container = document.querySelector('div.container')
+const container = document.querySelector('.products')
 
 fetch("/get-products")
   .then((data) => data.json())

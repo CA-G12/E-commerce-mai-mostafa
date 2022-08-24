@@ -1,54 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./admin.css">
-  </head>
-  <body>
-    <h1>hello</h1>
 
-    <div class="wrapper">
-      <div class="title">Add new prouducts</div>
-      <div class="form">
-        <div class="inputfield">
-          <label>Name</label>
-          <input id="name" type="text" class="input" />
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="inputfield">
-          <label>description</label>
-          <input id="description" class="textarea">
-        </div>
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
-    <div class="inputfield">
-          <label>category</label>
-          <div class="custom_select">
-            <select>
-              <!-- <option value="male">Male</option>
-              <option value="female">Female</option> -->
-            </select>
-          </div>
-       </div> 
+  <!--=============== BOXICONS ===============-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-        <div class="inputfield">
-          <label>image</label>
-          <input id="image" class="input" />
-        </div>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./style.css">
 
-        <div class="inputfield">
-          <label>price</label>
-          <input id="price" class="input" />
-        </div>
+  <title>Christmas | Add-Product</title>
+</head>
 
-        <div class="inputfield">
-          <button type="button" class="btn" >ADD PRODUCT </button>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="./img/logo.png" alt="" class="nav__logo-img">
+        Christmas
+      </a>
+
+      <div class="nav__btns">
+        <!-- Theme change button -->
+        <i class='bx bx-moon change-theme' id="theme-button"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <div class="title">Add new products</div>
+    <div class="form">
+      <div class="inputfield">
+        <label>Name</label>
+        <input id="name" type="text" class="input" />
+      </div>
+
+      <div class="inputfield">
+        <label>description</label>
+        <input id="description" class="textarea">
+      </div>
+
+      <div class="inputfield">
+        <label>category</label>
+        <div class="custom_select">
+          <select>
+
+          </select>
         </div>
       </div>
-    </div>
 
-    <script src="./admin.js"></script>
-  </body>
+      <div class="inputfield">
+        <label>image</label>
+        <input id="image" class="input" />
+      </div>
+
+      <div class="inputfield">
+        <label>price</label>
+        <input id="price" class="input" />
+      </div>
+
+      <div class="inputfield">
+        <button type="button" class="btn">ADD PRODUCT </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/admin.js"></script>
+</body>
+
 </html>
