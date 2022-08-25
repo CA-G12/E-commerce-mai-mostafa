@@ -724,6 +724,7 @@ body.dark-theme {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin: 48px 0;
 }
 .card {
   margin: 10px;
