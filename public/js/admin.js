@@ -8,7 +8,6 @@ const addBtn = document.getElementsByTagName('button')[0];
 fetch('/getData')
   .then((data) => data.json())
   .then((data) => {
-    // console.log(data);
 
     data.forEach((element, i) => {
       const option = document.createElement('option');
@@ -19,7 +18,6 @@ fetch('/getData')
   });
 
 const handelAddProuducts = () => {
-  // errorMessage.textContent = '';
   const header = {
     method: 'POST',
     body: JSON.stringify({

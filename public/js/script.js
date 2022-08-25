@@ -3,7 +3,6 @@ const container = document.querySelector('.products')
 fetch("/get-products")
   .then((data) => data.json())
   .then((data) => {
-    console.log(data);
 
     data.forEach((element, i) => {
       const card = document.createElement("div");

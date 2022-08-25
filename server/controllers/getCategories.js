@@ -6,7 +6,6 @@ const renderAdminPage = (req, res) => {
 };
 
 const getAllCategories = (req, res) => {
-  // console.log(req.url);
   categoriesQuery().then((data) => {
     res.send(data);
   });
