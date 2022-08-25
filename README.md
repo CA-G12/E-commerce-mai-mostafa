@@ -50,7 +50,8 @@ The admin enters the website and adds details about his Christmas product from t
   - Click on 'Download ZIP'.
   - You will have the project as ZIP file.
   - Extract the files, and you will have the project.
-
+  - After Open Folder in VSCode write in terminal `npm i` `npm run dev`
+ 
 
 
 # 👥 **Team members** 
