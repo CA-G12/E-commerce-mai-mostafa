@@ -31,9 +31,19 @@ The admin enters the website and adds details about his Christmas product from t
 - HTML5
 - CSS3
 - JavaScript
-- Git & Github
+- Nod.js
+- Express.js
 - PostgreSQL
+- Git & Github
+- DrawSQL
 - Heroku
+
+
+# **DrawSQL** 
+<div align="center">
+    <img src ="https://i.imgur.com/tr2DwTB.png" style ="height: 300px; width: 500px;">
+</div>
+
 
 ## Installation
 
